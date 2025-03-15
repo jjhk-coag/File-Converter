@@ -28,7 +28,7 @@ The **JPEG <-> PDF Converter** is a graphical user interface (GUI) application t
 
 ## 📷 Example UI
 ![Screenshot](screenshot.png)
-![Icon]()
+![Icon](Icons/app_icon.jpg)
 
 ## 🛠️ Author
 **jjhk-coag / Jakub Karczewski**
