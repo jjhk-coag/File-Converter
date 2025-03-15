@@ -27,8 +27,8 @@ The **JPEG <-> PDF Converter** is a graphical user interface (GUI) application t
 3. **Alternatively:** Use the **BAT** file to run the application without opening the console.
 
 ## 📷 Example UI
-![Screenshot](screenshot2.png)
-![Icon](Icons/app_icon.jpg)
+![Screenshot](Media/screenshot2.png)
+![Icon](Media/app_icon.jpg)
 
 ## 🛠️ Author
 **jjhk-coag / Jakub Karczewski**
