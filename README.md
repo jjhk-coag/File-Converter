@@ -4,10 +4,10 @@
 The **File Converter** is a graphical user interface (GUI) application that allows converting **JPEG, PDF, PNG, WEBP** files. It supports drag-and-drop functionality and file selection via the file explorer.
 
 ## 🎨 Features
-✅ **Convert JPEG, PDF, PNG, WEBP**
-✅ **Drag & Drop support** – simply drag files into the application
-✅ **File selection through file explorer**
-✅ **Custom app icon** for shortcut
+- ✅ **Convert JPEG, PDF, PNG, WEBP**
+- ✅ **Drag & Drop support** – simply drag files into the application
+- ✅ **File selection through file explorer**
+- ✅ **Custom app icon** for shortcut
 
 ## 🔧 Requirements
 - **Python 3.13 or later**
