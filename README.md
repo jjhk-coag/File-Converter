@@ -1,13 +1,12 @@
-# 📄 JPEG <-> PDF Converter
+# 📄 File Converter
 
 ## 📌 Description
-The **JPEG <-> PDF Converter** is a graphical user interface (GUI) application that allows converting **JPEG to PDF** and **PDF to JPEG** files. It supports drag-and-drop functionality and file selection via the file explorer.
+The **File Converter** is a graphical user interface (GUI) application that allows converting **JPEG, PDF, PNG, WEBP** files. It supports drag-and-drop functionality and file selection via the file explorer.
 
 ## 🎨 Features
-✅ **Convert JPEG to PDF**
-✅ **Convert PDF to JPEG** (each PDF page is saved as a separate JPG file)
+✅ **Convert JPEG, PDF, PNG, WEBP**
 ✅ **Drag & Drop support** – simply drag files into the application
-✅ **File selection through buttons and file explorer**
+✅ **File selection through file explorer**
 ✅ **Custom app icon** for a modern UI experience
 
 ## 🔧 Requirements
@@ -19,15 +18,15 @@ The **JPEG <-> PDF Converter** is a graphical user interface (GUI) application t
   ```
 
 ## 🚀 Running the Application in console
-1. Download the **converterapp.py** file.
+1. Download the **converterapp-V3.py** file.
 2. **Run the script**:
    ```sh
-   python converterapp.py
+   python converterapp-V3.py
    ```
-3. **Alternatively:** Use the **BAT** file to run the application without opening the console.
+3. **Alternatively:** Download and use the **BAT** file to run the application without opening the console.
 
 ## 📷 Example UI
-![Screenshot](Media/screenshot2.png)
+![Screenshot](Media/screenshot3.png)
 ![Icon](Media/app_icon.jpg)
 
 ## 🛠️ Author
