@@ -7,7 +7,7 @@ The **File Converter** is a graphical user interface (GUI) application that allo
 ✅ **Convert JPEG, PDF, PNG, WEBP**
 ✅ **Drag & Drop support** – simply drag files into the application
 ✅ **File selection through file explorer**
-✅ **Custom app icon** for a modern UI experience
+✅ **Custom app icon** for shortcut
 
 ## 🔧 Requirements
 - **Python 3.13 or later**
