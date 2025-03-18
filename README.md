@@ -8,7 +8,7 @@ The **File Converter** is a GUI application that allows converting **JPEG, PDF, 
 - ✅ **Drag & Drop support**
 - ✅ **File selection through file explorer**
 - ✅ **After conversion file is saved in the same folder as original** (Note) Program does not overwrite existing file.
-- ✅ **Custom app shortcut**
+- ✅ **App shortcut**
 
 ## 🔧 Requirements
 - **Python 3.13.1**
