@@ -1,7 +1,7 @@
 # 📄 File Converter
 
 ## 📌 Description
-The **File Converter** is a graphical user interface (GUI) application that allows converting **JPEG, PDF, PNG, WEBP** files. It supports drag-and-drop functionality and file selection via the file explorer.
+The **File Converter** is a GUI application that allows converting **JPEG, PDF, PNG, WEBP** files. It supports drag-and-drop functionality and file selection via the file explorer.
 
 ## 🎨 Features
 - ✅ **Convert JPEG, PDF, PNG, WEBP**
