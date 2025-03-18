@@ -5,25 +5,34 @@ The **File Converter** is a graphical user interface (GUI) application that allo
 
 ## 🎨 Features
 - ✅ **Convert JPEG, PDF, PNG, WEBP**
-- ✅ **Drag & Drop support** – simply drag files into the application
+- ✅ **Drag & Drop support**
 - ✅ **File selection through file explorer**
-- ✅ **Custom app icon** for shortcut
+- ✅ **Custom app shortcut**
 
 ## 🔧 Requirements
-- **Python 3.13 or later**
-- **Dependencies should download automatically**
+- **Python 3.13.1**
+- **Dependencies should be downloaded automatically when running the program**
 - **If needed install dependencies manually:**
   ```sh
   pip install -r apprequirements.txt
   ```
 
 ## 🚀 Running the Application in console
-1. Download the **converterapp-V3.py** file.
+1. Download the following:
+    - **apprequirements.txt** file.
+    - **converterapp-V3.py** file.
 2. **Run the script**:
    ```sh
    python converterapp-V3.py
    ```
-3. **Alternatively:** Download and use the **BAT** file to run the application without opening the console.
+   
+## 🚀 Running the Application without console
+1.  Download the following:
+    - **apprequirements.txt** file
+    - **Icon** folder
+    - **converterapp-V3.py** file
+    - **start_converterapp.bat** file
+2. Download or copy paste shortcut prefab **File Converter - shortcut** to desired loaction.
 
 ## 📷 Example UI
 ![Screenshot](Media/screenshot3.png)
