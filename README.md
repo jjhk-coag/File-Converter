@@ -17,15 +17,6 @@ The **File Converter** is a GUI application that allows converting **JPEG, PDF, 
   pip install -r apprequirements.txt
   ```
 
-## 🚀 Running the Application in console
-1. Download the following:
-    - **apprequirements.txt** file.
-    - **converterapp-V3.py** file.
-2. **Run the script**:
-   ```sh
-   python converterapp-V3.py
-   ```
-   
 ## 🚀 Running the Application without console
 1.  Download the following:
     - **apprequirements.txt** file
@@ -33,6 +24,16 @@ The **File Converter** is a GUI application that allows converting **JPEG, PDF, 
     - **converterapp-V3.py** file
     - **start_converterapp.bat** file
 2. Download or copy paste shortcut prefab **File Converter - shortcut** to desired loaction.
+3. To run aplication just double click on **File Converter - shortcut**.
+
+## 📟 Running the Application in console
+1. Download the following:
+    - **apprequirements.txt** file
+    - **converterapp-V3.py** file
+2. **Run the script**:
+   ```sh
+   python converterapp-V3.py
+   ```
 
 ## 📷 Example UI
 ![Screenshot](Media/screenshot3.png)
