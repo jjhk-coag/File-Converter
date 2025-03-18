@@ -7,6 +7,7 @@ The **File Converter** is a GUI application that allows converting **JPEG, PDF, 
 - ✅ **Convert JPEG, PDF, PNG, WEBP**
 - ✅ **Drag & Drop support**
 - ✅ **File selection through file explorer**
+- ✅ **After conversion file is saved in the same folder as original**
 - ✅ **Custom app shortcut**
 
 ## 🔧 Requirements
@@ -37,6 +38,7 @@ The **File Converter** is a GUI application that allows converting **JPEG, PDF, 
 
 ## 📷 Example UI
 ![Screenshot](Media/screenshot3.png)
+
 ![Icon](Media/app_icon.jpg)
 
 ## 🛠️ Author
