@@ -41,23 +41,35 @@ selected_file = None
 
 def update_buttons():
     global selected_file
-    btn_to_png.config(state="normal", bg="#121212")
-    btn_to_jpeg.config(state="normal", bg="#121212")
-    btn_to_webp.config(state="normal", bg="#121212")
-    btn_to_pdf.config(state="normal", bg="#121212")
+    btn_to_png.config(state="disabled", bg="#555555")
+    btn_to_jpeg.config(state="disabled", bg="#555555")
+    btn_to_webp.config(state="disabled", bg="#555555")
+    btn_to_pdf.config(state="disabled", bg="#555555")
     
     if selected_file:
         file_extension = os.path.splitext(selected_file)[1].lower()
         
         if file_extension in [".jpg", ".jpeg"]:
             btn_to_jpeg.config(state="disabled", bg="#555555")
+            btn_to_png.config(state="normal", bg="#121212")
+            btn_to_webp.config(state="normal", bg="#121212")
+            btn_to_pdf.config(state="normal", bg="#121212")
         elif file_extension == ".png":
+            btn_to_jpeg.config(state="normal", bg="#121212")
             btn_to_png.config(state="disabled", bg="#555555")
+            btn_to_webp.config(state="normal", bg="#121212")
+            btn_to_pdf.config(state="normal", bg="#121212")
         elif file_extension == ".webp":
+            btn_to_jpeg.config(state="normal", bg="#121212")
+            btn_to_png.config(state="normal", bg="#121212")
             btn_to_webp.config(state="disabled", bg="#555555")
+            btn_to_pdf.config(state="normal", bg="#121212")
         elif file_extension == ".pdf":
+            btn_to_jpeg.config(state="normal", bg="#121212")
+            btn_to_png.config(state="normal", bg="#121212")
+            btn_to_webp.config(state="normal", bg="#121212")
             btn_to_pdf.config(state="disabled", bg="#555555")
-
+            
 def convert_file(output_format):
     global selected_file
     if not selected_file:
@@ -165,7 +177,7 @@ def clear_selection():
 
 root = TkinterDnD.Tk()
 root.title("File Converter")
-root.geometry("400x300")
+root.geometry("400x350")
 root.configure(bg="#212121")
 
 label = tk.Label(root, text="Drag & Drop a file or use the button below", fg="#1DB954", bg="#212121", padx=10, pady=10)
@@ -194,7 +206,7 @@ btn_frame.pack(pady=5)
 btn_to_png = tk.Button(btn_frame, text=".png", command=lambda: convert_file("png"), bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
 btn_to_png.grid(row=0, column=0, padx=5)
 
-btn_to_jpeg = tk.Button(btn_frame, text=".jpeg", command=lambda: convert_file("jpg"), bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
+btn_to_jpeg = tk.Button(btn_frame, text=".jpg", command=lambda: convert_file("jpg"), bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
 btn_to_jpeg.grid(row=0, column=1, padx=5)
 
 btn_to_webp = tk.Button(btn_frame, text=".webp", command=lambda: convert_file("webp"), bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
@@ -203,8 +215,13 @@ btn_to_webp.grid(row=0, column=2, padx=5)
 btn_to_pdf = tk.Button(btn_frame, text=".pdf", command=lambda: convert_file("pdf"), bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
 btn_to_pdf.grid(row=0, column=3, padx=5)
 
-convert_button = tk.Button(root, text="Convert many to one", command=choose_and_convert_images)
-convert_button.pack(pady=20)
+label_convert = tk.Label(root, text="Convert many images to one PDF:", fg="#1DB954", bg="#212121", pady=5)
+label_convert.pack()
+
+btn_many_img_to_one_pdf = tk.Button(root, text="Open file explorer", command=choose_and_convert_images, bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
+btn_many_img_to_one_pdf.pack(pady=5)
+
+update_buttons()
 
 root.mainloop()
 
