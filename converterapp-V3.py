@@ -8,27 +8,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-REQUIREMENTS_FILE_NAME = "apprequirements.txt"
-
-def install_requirements():
-    try:
-        from PIL import Image
-        import tkinter as tk
-        from tkinterdnd2 import DND_FILES, TkinterDnD
-        from tkinter import filedialog, messagebox
-        import fitz
-        logging.info("All required libraries are already installed.")
-    except ImportError:
-        logging.info("Missing Libraries. Installing...")
-        if not os.path.exists(REQUIREMENTS_FILE_NAME):
-            logging.error(f"File {REQUIREMENTS_FILE_NAME} not found.")
-            sys.exit(1)
-        try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", REQUIREMENTS_FILE_NAME])
-            logging.info("All required libraries installed.")
-        except subprocess.CalledProcessError:
-            logging.error("Failed to install required libraries.")
-            sys.exit(1)
+from requirements_installer import install_requirements
             
 install_requirements()
 from PIL import Image
@@ -221,8 +201,26 @@ label_convert.pack()
 btn_many_img_to_one_pdf = tk.Button(root, text="Open file explorer", command=choose_and_convert_images, bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
 btn_many_img_to_one_pdf.pack(pady=5)
 
-update_buttons()
+import traceback
 
-root.mainloop()
+try:
+    update_buttons()
+    root.mainloop()
+except Exception:
+    import tkinter as tk
+    from tkinter import messagebox
+
+    # Tworzy ukryte okno (jeśli GUI jeszcze nie działa)
+    error_root = tk.Tk()
+    error_root.withdraw()
+
+    # Pobierz szczegóły błędu
+    error_msg = traceback.format_exc()
+
+    # Pokaż je w oknie
+    messagebox.showerror("Fatal Error", f"Application crashed:\n\n{error_msg}")
+
+    error_root.destroy()
+
 
 
