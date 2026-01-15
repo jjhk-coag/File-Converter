@@ -73,7 +73,11 @@ def set_selection(files):
 
 def update_drop_area():
     if not selected_files:
-        drop_area.config(text="Drop file(s) here")
+        drop_area.config(
+            text="Drop file(s) here",
+            justify="center",
+            anchor="center"
+        )
         return
 
     shown = 6
@@ -354,7 +358,7 @@ label.pack()
 
 drop_area = tk.Label(
     root, text="Drop file(s) here", fg="#1DB954", bg="#121212",
-    width=68, height=6, relief="ridge", justify="left", anchor="w"
+    width=68, height=6, relief="ridge", justify="center", anchor="center"
 )
 drop_area.pack(pady=10)
 drop_area.drop_target_register(DND_FILES)
@@ -367,7 +371,7 @@ btn_clear_file = tk.Button(btn_frame_top, text="Clear Selection", command=clear_
                            bg="#121212", fg="#FF4500", relief="flat", padx=10, pady=5)
 btn_clear_file.grid(row=0, column=0, padx=5)
 
-btn_select_file = tk.Button(btn_frame_top, text="Open File Explorer (multi)", command=open_file_dialog,
+btn_select_file = tk.Button(btn_frame_top, text="Open File Explorer", command=open_file_dialog,
                             bg="#121212", fg="#1DB954", relief="flat", padx=10, pady=5)
 btn_select_file.grid(row=0, column=1, padx=5)
 
