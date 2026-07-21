@@ -200,7 +200,7 @@ To merge images into one PDF:
 
 ## 📷 Example UI
 
-![Screenshot](Media/screenshot3.png)
+![Screenshot](Media/ss1.png)
 
 ![Icon](Media/app_icon.jpg)
 
