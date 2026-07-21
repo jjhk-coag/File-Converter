@@ -204,8 +204,6 @@ To merge images into one PDF:
 
 ![Icon](Media/app_icon.jpg)
 
-Make sure the referenced files exist in the `Media` directory.
-
 ## 🛠️ Author
 
 **jjhk-coag / Jakub Karczewski**
