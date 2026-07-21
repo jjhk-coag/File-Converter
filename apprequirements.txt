@@ -1,3 +1,0 @@
-tkinterdnd2
-pymupdf==1.22.3
-pillow

@@ -1,0 +1,5 @@
+tkinterdnd2
+pymupdf
+pillow
+pillow-heif
+ttkbootstrap
